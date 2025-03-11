@@ -1,8 +1,9 @@
 #include <particlesystem/emitter.h>
+#include <glm/glm.hpp>
 
 Emitter::Emitter() {
-	position = {0.0f, 0.0f};
-    angle = 0.0f;
+	position = {0.0f, 0.5f};
+    angle = 0;
 }
 
-std::vector<float> Emitter::getPosition() const { return position; }
+//glm::vec2 Emitter::getPosition() const { return position; }

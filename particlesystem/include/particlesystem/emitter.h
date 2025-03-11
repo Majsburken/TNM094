@@ -1,11 +1,12 @@
 #pragma once
-#include <vector>
+#include <particlesystem/particle.h>
+
 class Emitter {
 private:
-    std::vector<float> position;
-    float angle;
-    public:
+    glm::vec2 position;
+    int angle;
+public:
     // default constructor
     explicit Emitter();
-        std::vector<float> getPosition() const;
+    glm::vec2 getPosition() const { return position; };
 };

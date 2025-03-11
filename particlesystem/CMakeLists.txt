@@ -107,8 +107,10 @@ target_sources(particlesystem
     FILES
         include/particlesystem/particlesystem.h
         # ADD PATICLE SYSTEM HEADER FILES HERE
-	    include/particlesystem/Particle.h
+	    include/particlesystem/particle.h
     	include/particlesystem/ourSystem.h
+        include/particlesystem/effect.h
+        include/particlesystem/emitter.h
 
 	"include/particlesystem/ourSystem.h"
 
@@ -117,9 +119,10 @@ target_sources(particlesystem
     PRIVATE
         src/particlesystem/particlesystem.cpp
         # ADD PATICLE SYSTEM SOURCE FILES HERE
-        src/particlesystem/Particle.cpp
+        src/particlesystem/particle.cpp
         src/particlesystem/ourSystem.cpp
-
+        src/particlesystem/effect.cpp
+        src/particlesystem/emitter.cpp
 
 
 )

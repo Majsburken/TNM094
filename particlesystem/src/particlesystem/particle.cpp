@@ -4,14 +4,14 @@
 #include <iostream>
 
     // default constructor
-Particle::Particle(std::vector<float> pos) { 
-    velocity = {0.0f};
+Particle::Particle(glm::vec2 pos) { 
+    velocity = {5.0f,5.0f};
     lifetime = 1.0f;
     color = {0.5f, 0.5f, 0.f, 0.5f};
     position = pos;
     force = {0.0f, 0.0f};
-    size = {1.0f};
-    mass = {1.0f};
+    size = {10.0f};
+    mass = {10.0f};
     }
    
 
@@ -30,9 +30,9 @@ Particle::Particle(std::vector<float> pos) {
     float Particle::getLifetime() const { return lifetime;
     }
 
-    std::vector<float> Particle::getColor() const { return color;
+    glm::vec4 Particle::getColor() const { return color;
     }
 
-    std::vector<float> Particle::getPosition() const{ 
+    glm::vec2 Particle::getPosition() const{ 
         return position;
     }
